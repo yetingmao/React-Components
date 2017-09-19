@@ -28,10 +28,13 @@ export class Model extends React.Component<Props, States> {
     }
     isShow() {
         const Model = document.querySelector("." + this.state.dataClass) as HTMLElement;
+        const inReg = new RegExp("dialog-fadeIn", 'g');
+        const _have = inReg.test(Model.className);
         if (this.state.show) {
-            Model.className = Model.className + " dialog-fadeIn"
+            if (!_have) {
+                Model.className = Model.className + " dialog-fadeIn"
+            }
         } else {
-            const inReg = new RegExp("dialog-fadeIn", 'g')
             Model.className = Model.className.replace(inReg, "");
         }
     }
