@@ -4,4 +4,5 @@
 * Model/  `模态框组件`
 * Page/  `分页组件`
 * Alert/  `自定义Alert和Confirm组件`
+* uploadFile/  `上传文件组件`
 * readme.md  `此文件`
