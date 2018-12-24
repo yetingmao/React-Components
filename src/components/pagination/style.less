@@ -1,0 +1,90 @@
+@import "../../less/common.less";
+.gjk_pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 14px;
+    .pagination-info{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 41px;
+        left: 20px;
+    }
+    .pageContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: @font-theme;
+        .filter-content{
+            width: 90px!important;
+            margin: 0 10px;
+        }
+        .current-count-page{
+            margin-right: 10px;
+        }
+        .input-group{
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            a{
+                width: 45px;
+                border: none ;
+                color: #999999;
+                cursor: default;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            input{
+                width: 60px;
+                height: 36px;
+                margin: 0 10px;
+                padding: 4px 11px;
+                box-sizing: border-box;
+                border: 1px solid @box-select;
+                border-radius: 4px;
+            }
+            button{
+                width: 36px;
+                height: 36px;
+                background: @theme-color;
+                border: 1px solid @theme-color;
+                border-radius: 4px;
+                color: #fff;
+                box-sizing: border-box;
+                font-size: 12px;
+            }
+            button:hover{
+                background: #44ACFF;
+                border-color: #44ACFF;
+            }
+            .pageCount{
+                width: auto;
+                margin-right: 48px;
+                .pageNum{
+                    width: auto;
+                }
+            }
+        }
+        .pagination{
+            >li{
+                >a{
+                    width: 36px;
+                    height: 36px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
+.pagination > li > a, .pagination > li > span{
+    margin-right: 0!important;
+    border-radius: 0!important;
+    border-left: 0!important;
+}
+.pagination .previous>a ,.pagination .next>a{
+    border-radius: 4px!important;
+    border-left: 1px solid #ddd!important;
+}

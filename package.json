@@ -1,0 +1,45 @@
+{
+    "name": "react_components",
+    "version": "1.0.1",
+    "description": "",
+    "main": "output/index.js",
+    "types": "output/index.d.ts",
+    "repository": "https://github.com/yetingmao/React-Components",
+    "author": "yetm",
+    "license": "UNLICENSED",
+    "scripts": {
+        "prepublishOnly": "yarn build:clean",
+        "build:clean": "rm -rf ./output && yarn tsc",
+        "build:auto": "sh -ic \" yarn build:css &  tsc -w \"",
+        "lint": "node node_modules/tslint/bin/tslint -t verbose -p tsconfig.json --type-check",
+        "lint:fix": "node node_modules/tslint/bin/tslint -t verbose -c tslint.fix.json -p tsconfig.json --type-check --fix",
+        "build:css": "less-watch-compiler --config less-watch.config.json"
+    },
+    "dependencies": {
+        "@types/lodash": "^4.14.117",
+        "@types/prop-types": "^15.5.8",
+        "lodash": "^4.17.11",
+        "prop-types": "^15.6.2",
+        "react": "^16.5.1",
+        "react-dom": "^16.5.1",
+        "react-paginate": "^6.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^7.0.32",
+        "@types/react-dom": "^16.0.3",
+        "@types/react-paginate": "^6.0.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.3.1",
+        "babel-preset-es2015-native-modules": "^6.9.4",
+        "babel-preset-es2017": "^6.24.1",
+        "babel-preset-es2017-native-modules": "^0.0.2",
+        "express": "^4.16.3",
+        "fs-extra": "^7.0.0",
+        "less": "^3.8.1",
+        "less-watch-compiler": "^1.11.3",
+        "path": "^0.12.7",
+        "tslint": "^5.6.0",
+        "tslint-config-airbnb": "^5.2.1",
+        "typescript": "^2.9.1"
+    }
+}

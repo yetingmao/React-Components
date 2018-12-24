@@ -1,0 +1,162 @@
+@import "../../less/common.less";
+:root {
+    --homeColor: #ff7d3a;
+    --cancle: #0cc215;
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+}
+
+.xfl-btn {
+    line-height: 1.5;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 14px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 30px;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    position: relative;
+    color: rgba(0, 0, 0, .65);
+    background-color: #fff;
+    border-color: @theme-color;
+    color: @theme-color;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.backstage {
+    background: @theme-color;
+    color: #fff;
+    height: 40px!important;
+}
+
+.backstage:hover {
+    background: #44ACFF;
+    border-color: #44ACFF;
+}
+
+.xfl-btn i {
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.xfl-btn:not([disabled]):hover {
+    text-decoration: none;
+}
+
+.xfl-btn:not([disabled]):active {
+    outline: 0;
+    -webkit-transition: none;
+    transition: none;
+}
+
+// .xfl-btn:focus, .xfl-btn:hover {
+//     color: #fff;
+//     background-color: #44acff;
+//     border-color: #44acff;
+// }
+.xfl-btn.active,
+.xfl-btn:active {
+    color: #fff;
+    background-color: @theme-color;
+    border-color: @theme-color;
+}
+
+.xfl-btn-danger {
+    color: #f5222d;
+    background-color: #f5f5f5;
+    border-color: #f5222d;
+}
+
+.xfl-btn-orange {
+    color: var(--homeColor);
+    border-color: var(--homeColor);
+}
+
+.xfl-btn-danger.active,
+.xfl-btn-danger:active {
+    color: #fff;
+    background-color: #cf1322;
+    border-color: #cf1322;
+}
+
+.xfl-btn-danger:focus {
+    color: #ff4d4f;
+    background-color: #fff;
+    border-color: #ff4d4f;
+}
+
+.xfl-btn-danger:hover {
+    color: #fff;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+}
+
+.xfl-btn-orange.active,
+.xfl-btn-orange:active {
+    color: #fff;
+    background-color: #ff7e3a;
+    border-color: #ff7e3a;
+}
+
+.xfl-btn-orange:focus {
+    color: #fff;
+    background-color: var(--homeColor);
+    border-color: var(--homeColor);
+}
+
+.xfl-btn-orange:hover {
+    color: #fff;
+    background-color: #ff8d44;
+    border-color: #ff8d44;
+}
+
+.xfl-btn-cancle {
+    color: var(--cancle);
+    background-color: #f5f5f5;
+    border-color: var(--cancle);
+}
+
+.xfl-btn-cancle.active,
+.xfl-btn-cancle:active {
+    color: #fff;
+    background-color: var(--cancle);
+    border-color: var(--cancle);
+}
+
+.xfl-btn-cancle:focus {
+    color: #fff;
+    background-color: var(--cancle);
+    border-color: var(--cancle);
+}
+
+.xfl-btn-cancle:hover {
+    color: #fff;
+    background-color: var(--cancle);
+    border-color: var(--cancle);
+}
+
+.xfl-btn.disabled,
+.xfl-btn.disabled.active,
+.xfl-btn.disabled:active,
+.xfl-btn.disabled:focus,
+.xfl-btn.disabled:hover,
+.xfl-btn[disabled],
+.xfl-btn[disabled].active,
+.xfl-btn[disabled]:active,
+.xfl-btn[disabled]:focus,
+.xfl-btn[disabled]:hover {
+    color: rgba(0, 0, 0, .25);
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+}

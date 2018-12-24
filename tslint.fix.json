@@ -1,0 +1,89 @@
+{
+    "defaultSeverity": "error",
+    "jsRules": {},
+    "rulesDirectory": [
+        "tslint-consistent-codestyle",
+        "./node_modules/tslint-eslint-rules/dist/rules/",
+        "tslint-microsoft-contrib",
+        "vrsource-tslint-rules"
+    ],
+    "rules": {
+        "semicolon": [
+            true,
+            "always"
+        ],
+        "ter-indent": [
+            true,
+            4,
+            {
+                "SwitchCase": 1, // switch/case 中的case缩进
+                "VariableDeclarator": {
+                    "var": 0,
+                    "let": 0,
+                    "const": 0,
+                    "export": 0
+                }
+            }
+        ],
+        "quotemark": [
+            true,
+            "double",
+            "jsx-double"
+        ],
+        "max-line-length": [
+            true,
+            160
+        ],
+        "one-line": [
+            true,
+            "check-catch",
+            "check-else",
+            "check-finally",
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "singleline": "never",
+                "multiline": {
+                    "objects": "always",
+                    "arrays": "always",
+                    "functions": "never",
+                    "typeLiterals": "never",
+                    "exports": "never",
+                    "imports": "never"
+                }
+            }
+        ],
+        "no-consecutive-blank-lines": [
+            true,
+            3
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-type",
+            "check-preblock"
+        ],
+        "object-literal-key-quotes": [
+            true,
+            "consistent-as-needed"
+        ],
+        "eofline": true,
+        "curly": true,
+        "import-spacing": true,
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "linebreak-style": false,
+        "no-empty-line-after-opening-brace": false,
+        "no-trailing-whitespace": true,
+        "no-unnecessary-semicolons": true,
+        "typedef-whitespace": false
+    }
+}

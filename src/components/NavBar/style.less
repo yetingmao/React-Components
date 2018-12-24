@@ -1,0 +1,41 @@
+@import "../../less/common.less";
+.gjk-navbar{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    background: #fff;
+    .tabbar-title{
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: left;
+        .parentNode,.childNode{
+            color: @font-theme;
+            border-left: 3px solid transparent;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .parentNode{
+            justify-content: space-between;
+            padding: 0 26px;
+            i:first-child{
+                color: @anv-icon;
+                font-size: 17px;
+                margin-right: 10px;
+            }
+        }
+        .parentNode:hover,.childNode:hover{
+            background: @hover-nav;
+        }
+        .active{
+            border-left: 3px solid @theme-color;
+            color: @theme-color;
+            background: @hover-nav;
+            i:first-child{
+                color: @theme-color;
+            }
+        }
+    }
+}

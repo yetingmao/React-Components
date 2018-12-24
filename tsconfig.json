@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "declaration": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "pretty": true,
+        "sourceMap": false,
+        "allowSyntheticDefaultImports": true,
+        "alwaysStrict": true,
+        "jsx": "react",
+        "forceConsistentCasingInFileNames": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "outDir": "./output"
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "./src/component/*/*.tsx",
+        "./src/*.tsx",
+        "./demo/*.tsx",
+    ]
+}
