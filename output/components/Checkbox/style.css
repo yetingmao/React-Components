@@ -1,0 +1,38 @@
+.gjk-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #c8c8c8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.gjk-checkbox .iconfont {
+  color: transparent;
+  font-size: 13px;
+}
+.gjk-checkbox.disabled {
+  border: 1px solid #c8c8c8;
+  background: #f0f0f0;
+  cursor: default;
+}
+.gjk-checkbox.disabled .iconfont {
+  color: transparent;
+}
+.gjk-checkbox.disabled:hover {
+  border: 1px solid #c8c8c8;
+}
+.gjk-checkbox:hover {
+  border: 1px solid #2196f3;
+}
+.gjk-checkbox.checked {
+  border: 1px solid #2196f3;
+  background: #2196f3;
+}
+.gjk-checkbox.checked .iconfont {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

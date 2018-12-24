@@ -1,0 +1,108 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Microsoft YaHei", "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  min-height: 930px;
+  height: auto;
+}
+.hide {
+  display: none;
+}
+.search-time .time-lable {
+  display: inline-block;
+  min-width: 70px;
+  vertical-align: middle;
+}
+.search-time div {
+  display: inline-block;
+}
+.search-time div input {
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  color: #444444;
+  display: inline-block;
+  font-size: inherit;
+  height: 36px;
+  outline: 0;
+  padding: 3px 10px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.search-time div span {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,148 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "Microsoft YaHei", "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+li {
+  list-style: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  min-height: 930px;
+  height: auto;
+}
+.hide {
+  display: none;
+}
+.infoTab .itemTab {
+  padding: 0px 10px 0 30px;
+  line-height: 40px;
+  background: #50abe4;
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  margin-right: 4px;
+  cursor: pointer;
+}
+.infoTab .itemTab:after {
+  content: '';
+  display: block;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #50abe4;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  z-index: 10;
+}
+.infoTab .itemTab:before {
+  content: '';
+  display: block;
+  border-top: 20px solid #50abe4;
+  border-bottom: 20px solid #50abe4;
+  border-left: 20px solid #fff;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+.infoTab li:first-child {
+  border-radius: 4px 0 0 4px;
+  padding-left: 25px;
+}
+.infoTab li:first-child:before {
+  display: none;
+}
+.infoTab li:last-child {
+  border-radius: 0px 4px 4px 0px;
+  padding-right: 25px;
+}
+.infoTab li:last-child:after {
+  display: none;
+}
+.infoTab .itemTab.disabled {
+  background: #ccc;
+}
+.infoTab .itemTab.disabled:after {
+  border-left: 20px solid #ccc;
+}
+.infoTab .itemTab.disabled:before {
+  border-top: 20px solid #ccc;
+  border-bottom: 20px solid #ccc;
+}
+.infoTab .itemTab.active {
+  background: #2196f3;
+}
+.infoTab .itemTab.active:after {
+  border-left: 20px solid #2196f3;
+}
+.infoTab .itemTab.active:before {
+  border-top: 20px solid #2196f3;
+  border-bottom: 20px solid #2196f3;
+}
+/*# sourceMappingURL=style.css.map */
