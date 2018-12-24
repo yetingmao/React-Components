@@ -1,0 +1,140 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-airbnb"
+    ],
+    "jsRules": {},
+    "rules": {
+        /* 
+         * 
+         * disalbed rules
+         *
+         */
+        "ordered-imports": [
+            false
+        ], // import按字母顺序import
+        "comment-format": [
+            false
+        ], // 注释的格式
+        "no-empty-interface": false, //不允许空的interface定义,react中会用到,作为占位符
+        "object-literal-sort-keys": false, //按重要程度排序
+        "object-literal-shorthand": false, // as microsoft recommend
+        "no-increment-decrement": false,
+        /*
+         * 
+         * Todo,fix and enable these rules
+         * enabled in strict mode
+         *
+         */
+        // "no-console": [ // todo, add a logUtil
+        //     false
+        // ],
+        // "import-name": false, //todo whitelist
+        // "prefer-const": [ //todo check
+        //     false
+        // ],
+        // "interface-name": [
+        //     false,
+        //     "always-prefix"
+        // ],
+        // "triple-equals": false,
+        // "only-arrow-functions": [
+        //     false,
+        //     "allow-declarations"
+        // ],
+        /*
+         *
+         * reconfigurated rules
+         *
+         */
+        "variable-name": [
+            true,
+            "ban-keywords",
+            "check-format",
+            "allow-leading-underscore"
+        ],
+        "ter-indent": [
+            true,
+            4,
+            {
+                "SwitchCase": 1, // switch/case 中的case缩进
+                "VariableDeclarator": {
+                    "var": 0,
+                    "let": 0,
+                    "const": 0,
+                    "export": 0
+                }
+            }
+        ],
+        "quotemark": [
+            true,
+            "double",
+            "jsx-double"
+        ],
+        "max-line-length": [
+            true,
+            160
+        ],
+        "member-access": [
+            true,
+            "check-accessor"
+        ],
+        "one-line": [
+            true,
+            "check-catch",
+            "check-else",
+            "check-finally",
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "trailing-comma": [
+            true,
+            {
+                "singleline": "never",
+                "multiline": {
+                    "objects": "always",
+                    "arrays": "always",
+                    "functions": "never",
+                    "typeLiterals": "never",
+                    "exports": "never",
+                    "imports": "never"
+                }
+            }
+        ],
+        "no-consecutive-blank-lines": [
+            true,
+            3
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-module",
+            "check-type",
+            "check-preblock"
+        ],
+        "object-literal-key-quotes": [
+            true,
+            "consistent-as-needed"
+        ],
+        "array-type": [
+            true,
+            "array"
+        ],
+        "no-angle-bracket-type-assertion": false,
+        "prefer-type-cast": true,
+        "ter-prefer-arrow-callback": [
+            true,
+            {
+                "allowNamedFunctions": true
+            }
+        ]
+        //unchecked
+        // "typedef-whitespace": [
+        //     false
+        // ],
+    },
+    "rulesDirectory": []
+}

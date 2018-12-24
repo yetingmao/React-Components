@@ -1,0 +1,8 @@
+/src
+
+tsconfig.json
+tslint.fix.json
+tslint.json
+tslint.strict.json
+
+!output

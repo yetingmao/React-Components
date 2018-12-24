@@ -1,19 +1,19 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-if (typeof window != "undefined") {
-    require("./style.css");
+if (typeof window !== "undefined") {
+    require("./style.css");  // tslint:disable-line:no-var-requires
 }
-interface PagelinkProps {
-    className?: string,
-    text?: string,
-    clickPage?: Function,
-    index?: number
+interface IPagelinkProps {
+    className?: string;
+    text?: string;
+    clickPage?: Function;
+    index?: number;
 }
-interface PagelinkStates {
-
+interface IPagelinkStates {
+    //
 }
-export class Pagelink extends React.Component<PagelinkProps, PagelinkStates>{
-    constructor(props?: PagelinkProps, state?: PagelinkStates) {
+export class Pagelink extends React.Component<IPagelinkProps, IPagelinkStates>{
+    constructor(props?: IPagelinkProps, state?: IPagelinkStates) {
         super(props);
     }
     clickEvent() {
@@ -73,7 +73,7 @@ export class Page extends React.Component<PageProps, PageStates>{
     }
     goClicked() {
         let idx = this.state.goIndex - 1;
-        if (idx >= 0 && idx != this.props.pageIndex) {
+        if (idx >= 0 && idx !== this.props.pageIndex) {
             this.clickPage(idx);
             this.setState({ goIndex: 0 });
         }

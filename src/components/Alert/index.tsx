@@ -1,4 +1,4 @@
-if (typeof window != "undefined") {
+if (typeof window !== "undefined") {
     require("./style.css");
 }
 export const Alert = function (str: string) {

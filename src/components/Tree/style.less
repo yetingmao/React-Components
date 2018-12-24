@@ -1,0 +1,155 @@
+@import "../../less/common.less";
+.tree {
+    width: 100%; // overflow: auto;
+    .drag-submit {
+        display: flex;
+        margin: 10px 0;
+    }
+    .tree_title {
+        height: 40px;
+        color: #fff;
+        background: #337ab7;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+        line-height: 40px;
+    }
+}
+
+.tree li {
+    cursor: pointer;
+    line-height: 35px;
+}
+
+.tree li i {
+    margin-right: 5px;
+    color: #333;
+}
+
+.tree li i.hide {
+    visibility: hidden;
+}
+
+.tree li ul {
+    display: none;
+    margin-left: 16px;
+    .active-input {
+        input {
+            height: 26px;
+            padding: 0 5px;
+        }
+    }
+}
+
+.tree li ul.active {
+    display: block;
+}
+
+.tree ul li>div.item-name {
+    color: #5a5e66;
+    .active {
+        display: none;
+    }
+    .active-move {
+        float: right;
+        position: relative;
+        width: 55px;
+        height: 35px;
+        span {
+            position: absolute;
+            font-size: 20px;
+            height: 24px;
+        }
+        span.icon-up {
+            top: -13px;
+            left: 17px;
+            .up-info {
+                display: none;
+                font-size: 12px;
+                width: 30px;
+                position: absolute;
+                top: 5px;
+            }
+        }
+        span.icon-up:hover {
+            .up-info {
+                display: block;
+            }
+        }
+        span.icon-down {
+            left: 17px;
+            bottom: -3px;
+            .down-info {
+                display: none;
+                font-size: 12px;
+                width: 30px;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+        span.icon-down:hover .down-info {
+            display: block;
+        }
+        span.icon-left {
+            .left-info {
+                display: none;
+                font-size: 12px;
+                width: 70px;
+                position: absolute;
+                left: -45px;
+            }
+        }
+        span.icon-left:hover .left-info {
+            display: block;
+        }
+        span.icon-right {
+            right: 0px;
+            .right-info {
+                display: none;
+                font-size: 12px;
+                width: 70px;
+                position: absolute;
+                right: 5px;
+            }
+        }
+        span.icon-right:hover .right-info {
+            display: block;
+        }
+    }
+    .item-count {
+        float: right;
+        color: #337ab7;
+        margin-right: 20px;
+    }
+}
+
+.tree ul li>div.item-name:hover {
+    background: #ddd;
+    .active {
+        display: block;
+        float: right;
+        margin-right: 5px;
+        width: 50px;
+        text-align: center;
+        position: relative;
+        .active-info {
+            position: absolute;
+            z-index: 100;
+            display: none;
+            padding: 5px;
+            border: 1px solid #ccc;
+            background: #ddd;
+            left: -70px;
+            button {
+                margin-top: 5px;
+            }
+        }
+    }
+    .active:hover>.active-info {
+        display: block;
+    }
+}
+
+.tree ul li>div.active {
+    background: #ddd;
+}

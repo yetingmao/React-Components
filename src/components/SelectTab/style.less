@@ -1,0 +1,63 @@
+@import "../../less/common.less";
+.select-tag{
+    margin: 5px 0 0 20px;
+    position: relative;
+    min-width: 300px;
+    .tag-title{
+        display: inline-block;
+        border:1px solid transparent;
+        padding: 10px 10px 10px 20px;
+        width: 65px;
+            span.iconfont{
+                font-size: 25px;
+                margin-left: 10px;
+            }
+    }
+    .tag-select{
+        display: inline-block;
+        position: relative;
+        margin-right: 15px;
+        span.icon-prompt-a{
+            position: absolute;
+            top: -5px;
+        }
+    }
+    .tag-info{
+        width: 345px;
+        display: none;
+        position: absolute;
+        background: #fff;
+        top: 45px;
+        border: 1px solid #797979;
+        z-index: 100;
+        .info-name{
+            padding: 20px 0;
+            button{
+                display:  inline-block;
+                margin: 8px;
+            }
+        }
+        .info-select{
+            display: flex; 
+            margin: 20px
+        }
+    }
+}
+.select-tag.active{
+    .tag-title{
+        border: 1px solid #797979;
+    }
+    .tag-info{
+        display: block;
+    }
+    .tag-line{
+        position: absolute;
+        width: 95px;
+        height: 1px;
+        left: 1px;
+        bottom: 1px;
+        background: #fff;
+        z-index: 101;
+        }
+}
+  
