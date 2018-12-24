@@ -4,7 +4,7 @@
     "description": "",
     "main": "output/index.js",
     "types": "output/index.d.ts",
-    "repository": "https://github.com/yetingmao/React-Components",
+    "repository": "https://github.com/yetingmao/React-Components.git",
     "author": "yetm",
     "license": "UNLICENSED",
     "scripts": {

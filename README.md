@@ -11,11 +11,9 @@
 
 
 ## Install ## 
-* yarn add @nestsoft/xfl-ui
+* yarn add https://github.com/yetingmao/React-Components.git
 
 
-## Usage ##
-* import { Button } from "@nestsoft/xfl-ui"; 
 
 
 ## 文件结构 ##
