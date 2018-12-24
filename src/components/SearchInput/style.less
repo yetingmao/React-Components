@@ -1,0 +1,51 @@
+@import "../../less/common.less";
+.search_input{
+        position: relative;
+        min-width: 200px;
+        font-size: 14px;
+        color: @font-theme;
+        input{
+            width: 300px;
+            height: 36px;
+            padding: 0 50px 0 10px;
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+            color: rgb(31, 61, 60);
+            box-sizing: border-box;
+        }
+        input:hover{
+            border-color: @theme-color;
+        }
+        input::-webkit-input-placeholder{
+            color: @box-select;
+        }
+        .search-btn{
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                color: @box-select;
+            }
+        }
+        .del-btn{
+            cursor: pointer;
+            position: absolute;
+            right: 30px;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                color: @box-select;
+            }
+            span:hover{
+                color: #444444;
+            }
+        }
+}

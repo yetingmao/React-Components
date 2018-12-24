@@ -1,0 +1,40 @@
+@import "../../less/common.less";
+.gjk_radio_wraper{
+    margin-right: 20px;
+    .gjk_radio_input{
+        display: none;
+    }
+    .gjk_radio_inner{
+        display: inline-block;
+        border:1px solid #ccc;
+        width:16px;
+        height: 16px;
+        border-radius:50%;
+        vertical-align: middle;
+        margin-right: 10px;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .gjk_radio_inner:before{
+        content: '';
+        font-size: 0;
+        width: 8px;
+        height: 8px;
+        background: @theme-color;
+        position: absolute;
+        left:50%;
+        top:50%;
+        margin-left: -4px;
+        margin-top: -4px;
+        border-radius: 50%;
+        display: none;
+    }
+    .gjk_radio_input:checked~.gjk_radio_inner:before{
+        display: block;
+    }
+}
+.gjk_radio_wraper.checked{
+    .gjk_radio_inner{
+        border-color: @theme-color;
+    }
+}

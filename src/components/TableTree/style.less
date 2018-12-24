@@ -1,0 +1,188 @@
+.gjk_table_tree {
+    width: 100%;
+    overflow: auto;
+    border-top: 1px solid #e6e6e6;
+    .drag-submit {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .tree_title {
+        display: flex;
+        height: 60px;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        border-bottom: 1px solid #e6e6e6;
+        line-height: 60px;
+        .title_icon {
+            width: 10%;
+            border-left: 1px solid #e6e6e6;
+        }
+        .title_name {
+            width: 30%;
+        }
+        .title_remark {
+            width: 35%;
+        }
+        .title_active {
+            border-right: 1px solid #e6e6e6;
+            width: 25%;
+        }
+    }
+}
+
+.gjk_table_tree li {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 46px;
+}
+
+.gjk_table_tree li i.hide {
+    visibility: hidden;
+}
+
+.gjk_table_tree li ul {
+    display: none;
+    .item_title_icon {
+        i {
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+}
+
+.gjk_table_tree li ul.active {
+    display: block;
+}
+
+.gjk_table_tree ul li>div.item-name {
+    display: flex;
+    color: #5a5e66;
+    border-bottom: 1px solid #e6e6e6;
+    .active {
+        display: none;
+    }
+    .active-move {
+        float: right;
+        position: relative;
+        width: 55px;
+        height: 35px;
+        span {
+            position: absolute;
+            font-size: 20px;
+            height: 24px;
+        }
+        span.icon-up {
+            top: -13px;
+            left: 17px;
+            .up-info {
+                display: none;
+                font-size: 12px;
+                width: 30px;
+                position: absolute;
+                top: 5px;
+            }
+        }
+        span.icon-up:hover {
+            .up-info {
+                display: block;
+            }
+        }
+        span.icon-down {
+            left: 17px;
+            bottom: -3px;
+            .down-info {
+                display: none;
+                font-size: 12px;
+                width: 30px;
+                position: absolute;
+                bottom: -10px;
+            }
+        }
+        span.icon-down:hover .down-info {
+            display: block;
+        }
+        span.icon-left {
+            .left-info {
+                display: none;
+                font-size: 12px;
+                width: 70px;
+                position: absolute;
+                left: -45px;
+            }
+        }
+        span.icon-left:hover .left-info {
+            display: block;
+        }
+        span.icon-right {
+            right: 0px;
+            .right-info {
+                display: none;
+                font-size: 12px;
+                width: 70px;
+                position: absolute;
+                right: 5px;
+            }
+        }
+        span.icon-right:hover .right-info {
+            display: block;
+        }
+    }
+    .item_title_icon {
+        width: 10%;
+        border-left: 1px solid #e6e6e6;
+    }
+    .item_title_name {
+        text-align: center;
+        width: 30%;
+    }
+    .item_title_remark {
+        text-align: center;
+        width: 35%;
+    }
+    .item_title_active {
+        width: 25%;
+        border-right: 1px solid #e6e6e6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        span{
+            width: 26px;
+            height: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            margin-right: 10px;
+            cursor: pointer;
+            i{
+                font-size: 14px;
+                color: #4778c7;
+            }
+        }
+        span:hover {
+            background: rgba(71,120,199,.1);
+            i{
+                color: #4778c7;
+            }
+        } 
+    }
+}
+
+.gjk_table_tree ul li>div.item-name:hover {
+    background: #ebf0f8;
+    .active {
+        display: block;
+        float: right;
+        margin-right: 5px;
+        width: 50px;
+        text-align: center;
+        position: relative;
+    }
+}
+
+.gjk_table_tree ul li>div.active {
+    background: #ebf0f8;
+}

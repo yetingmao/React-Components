@@ -1,0 +1,5 @@
+{
+    "watchFolder": "src",
+    "outputFolder": "output",
+    "sourceMap": true
+}

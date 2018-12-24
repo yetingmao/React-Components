@@ -1,0 +1,68 @@
+@import "../../less/common.less";
+.infoTab{
+    .itemTab{
+        padding: 0px 10px 0 30px;
+        line-height: 40px;
+        background: #50abe4;
+        display: inline-block;
+        color: #fff;
+        position: relative;
+        margin-right: 4px;
+        cursor: pointer;
+    }
+    .itemTab:after {
+        content: '';
+        display: block;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid #50abe4;
+        position: absolute;
+        right: -20px;
+        top: 0;
+        z-index: 10;
+    }
+    .itemTab:before {
+        content: '';
+        display: block;
+        border-top: 20px solid #50abe4;
+        border-bottom: 20px solid #50abe4;
+        border-left: 20px solid #fff;
+        position: absolute;
+        left: 0px;
+        top: 0;
+    }
+    li:first-child {
+        border-radius: 4px 0 0 4px;
+        padding-left: 25px;
+    }
+    li:first-child:before {
+        display: none;
+    }
+    li:last-child{
+        border-radius: 0px 4px 4px 0px;
+        padding-right: 25px;
+    }
+    li:last-child:after {
+        display: none;
+    }
+    .itemTab.disabled{
+        background: #ccc;
+    }
+    .itemTab.disabled:after{
+        border-left: 20px solid #ccc;
+    }
+    .itemTab.disabled:before{
+         border-top: 20px solid #ccc;
+         border-bottom: 20px solid #ccc;
+    }
+    .itemTab.active{
+        background: #2196f3;
+    }
+    .itemTab.active:after{
+        border-left: 20px solid #2196f3;
+    }
+    .itemTab.active:before{
+        border-top: 20px solid #2196f3;
+        border-bottom: 20px solid #2196f3;
+    }
+}
