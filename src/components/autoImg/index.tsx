@@ -1,11 +1,9 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
-import { Img } from "../img";
-
+import { Img } from "../../index";
 if (typeof window !== "undefined") {
-    // tslint:disable-next-line:no-var-requires
-    require("./style.css");
+    require("./style.css");// tslint:disable-line:no-var-requires
 }
+
 export interface IProps {
     width: number;//容器宽度
     height: number;//容器高度

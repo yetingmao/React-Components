@@ -13,7 +13,6 @@ export interface IProps {
     placeholder?: string;
     title?: string;
     getSelect?: (value: string) => void;
-    invalid?: boolean;
 }
 
 export interface IStates extends IProps {
@@ -54,7 +53,7 @@ export class Select extends React.Component<IProps, IStates> {
     }
     public render() {
         const { val, isDropdownShow } = this.state;
-        const { title, disabled, dropdownTop, placeholder, width, list, invalid } = this.props;
+        const { title, disabled, dropdownTop, placeholder, width, list } = this.props;
         let data;
         let styleHeight = "auto";
         if (list && list.length > 0) {
@@ -72,7 +71,7 @@ export class Select extends React.Component<IProps, IStates> {
         return <div className="select-filter-item">
             {titleTop}
             <div className="filter-content" style={{ width: width ? `${width}px` : "170px" }} onClick={(e) => { e.stopPropagation(); }}>
-                <div className={`filter-select ${isDropdownShow ? "active" : ""}`} onClick={() => { if (!invalid) this.setSelect(); }}>
+                <div className={`filter-select ${isDropdownShow ? "active" : ""}`} onClick={() => { this.setSelect(); }}>
                     <input className="filter-input" type="text" placeholder={placeholder ? placeholder : "请选择"} disabled={disabled} value={val}
                         onChange={(e) => {
                             this.setState({

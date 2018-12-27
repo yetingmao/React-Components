@@ -1,0 +1,45 @@
+@import "../../less/common.less";  
+.gjk_tag{
+    height: 28px;
+    padding:16px 12px;
+    margin-right: 8px;
+    background: #f0f0f0;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    .iconfont{
+        font-size: 14px;
+        color: #c8c8c8;
+    }
+    .iconfont:hover{
+        color: @theme-color;
+    }
+    .icon-palace-tag-delete{
+        position: absolute;
+        top: -7px;
+        right: -7px;
+        cursor: pointer;
+    }
+    .icon-palace-edit{
+        margin-left: 6px;
+        cursor: pointer;
+    }
+    .edit_input{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        input{
+            width: 100%!important;
+            height: 28px!important;
+        }
+    }
+}
+.gjk_tag_edit{
+    padding: 0 8px 0 12px;
+}

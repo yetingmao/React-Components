@@ -1,7 +1,8 @@
-if (typeof window !== "undefined") {
-    require("./style.css");// tslint:disable-line:no-var-requires
-}
 import * as React from "react";
+if (typeof window !== "undefined") {
+    require("./style.css");// tslint:disable-line:no-var-requires 
+}
+
 export interface IProps {// tslint:disable-line:interface-name
     progress: number;
     bgColor?: string;

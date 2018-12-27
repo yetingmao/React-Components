@@ -1,8 +1,7 @@
 import * as React from "react";
 import Picture from "../Picture";
-
-if (typeof window !== "undefined") {     // tslint:disable-next-line:no-var-requires
-    require("./style.css");
+if (typeof window !== "undefined") {
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
 
 export interface IProps {

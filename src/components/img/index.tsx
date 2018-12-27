@@ -1,7 +1,7 @@
-if (typeof window !== "undefined") {
-    require("./style.css");  // tslint:disable-line:no-var-requires
-}
 import * as React from "react";
+if (typeof window !== "undefined") {
+    require("./style.css");// tslint:disable-line:no-var-requires 
+}
 
 let supportWebp = false;
 const staticImg = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533115600722&di=51ed4163a0be2132b1ca3260817476b7&imgtype=0&"

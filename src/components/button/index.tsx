@@ -1,12 +1,10 @@
 import * as React from "react";
-
 if (typeof window !== "undefined") {
-    // tslint:disable-next-line:no-var-requires
-    require("./style.css");
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
 
 export interface IProps {
-    type?: string;//按钮类型 xfl-btn-danger xfl-btn-orange xfl-btn-cancle  backstage
+    type?: string;//按钮类型 xfl-btn-danger xfl-btn-orange xfl-btn-cancle backstage
     text: string;
     icon?: string;
     isActive?: boolean;

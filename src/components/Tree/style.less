@@ -1,4 +1,3 @@
-@import "../../less/common.less";
 .tree {
     width: 100%; // overflow: auto;
     .drag-submit {
@@ -13,6 +12,11 @@
         text-align: center;
         cursor: pointer;
         line-height: 40px;
+    }
+    .icon-palace-tree-open,.icon-palace-tree-close{
+        color: #fece30;
+        font-size: 13px;
+        margin-right: 10px;
     }
 }
 
@@ -32,7 +36,10 @@
 
 .tree li ul {
     display: none;
-    margin-left: 16px;
+    // .item-name{
+    //     padding-left: 46px;
+    //     box-sizing: border-box;
+    // }
     .active-input {
         input {
             height: 26px;
@@ -124,7 +131,7 @@
 }
 
 .tree ul li>div.item-name:hover {
-    background: #ddd;
+    background: #d1e1fb;
     .active {
         display: block;
         float: right;

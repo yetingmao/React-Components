@@ -1,7 +1,6 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 if (typeof window !== "undefined") {
-    require("./style.css");  // tslint:disable-line:no-var-requires
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
 
 export interface IProps {
@@ -15,7 +14,7 @@ export interface IStates {
 
 }
 export default class Radio extends React.Component<IProps, IStates> {
-    constructor(props: IProps, context) {
+    constructor(props: IProps) {
         super(props);
     }
     public render() {

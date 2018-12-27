@@ -1,10 +1,11 @@
-if (typeof window !== "undefined") {
-    require("./style.css");  // tslint:disable-line:no-var-requires
-}
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import { Button } from "../button";
+import { Button } from "../../index";
 import * as lodash from "lodash";
+if (typeof window !== "undefined") {
+    require("./style.css");// tslint:disable-line:no-var-requires 
+}
+
 const adj = (orig: string, b: string) => {
     return orig.slice(0, orig.length - 1) + b + orig.slice(orig.length - 1);
 };

@@ -1,8 +1,7 @@
 import * as React from "react";
 if (typeof window !== "undefined") {
-    require("./style.css");  // tslint:disable-line:no-var-requires
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
-
 
 export interface IProps {
     disablied?: boolean;
@@ -41,7 +40,6 @@ export default class SelectInput extends React.Component<IProps, IStates> {
                     this.focus(e);
                 }}
             />
-
         </div >;
     }
     private focus(e: React.FocusEvent<HTMLInputElement>) {

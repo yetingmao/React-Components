@@ -1,8 +1,6 @@
 import * as React from "react";
-
 if (typeof window !== "undefined") {
-    // tslint:disable-next-line:no-var-requires
-    require("./style.css");
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
 
 export interface IProps {

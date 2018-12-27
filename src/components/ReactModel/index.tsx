@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Model } from "../Model";
+import * as React from "react";
+import { Button, TreeList, Model } from "../../index";
 if (typeof window !== "undefined") {
-    require("./style.css");  // tslint:disable-line:no-var-requires
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
 
 export interface IProps {

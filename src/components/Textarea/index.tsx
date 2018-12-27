@@ -1,7 +1,8 @@
-import React from "react";
+import * as React from "react";
 if (typeof window !== "undefined") {
     require("./style.css");// tslint:disable-line:no-var-requires
 }
+
 export interface IProps {
     width?: number;
     height?: number;

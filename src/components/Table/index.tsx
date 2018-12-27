@@ -1,9 +1,8 @@
-
 import * as React from "react";
-
 if (typeof window !== "undefined") {
-    require("./style.css");// tslint:disable-line:no-var-requires
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
+
 export interface IProps {
     title: (string | JSX.Element)[];
     list: any;

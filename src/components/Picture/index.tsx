@@ -1,6 +1,6 @@
 import * as React from "react";
 if (typeof window !== "undefined") {
-    require("./style.css");  // tslint:disable-line:no-var-requires
+    require("./style.css");// tslint:disable-line:no-var-requires 
 }
 
 let supportWebp = false;
