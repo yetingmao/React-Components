@@ -233,7 +233,7 @@ export class Tree extends React.Component<Iprops, Istates> {
                 } else {
                     li = <li key={index} >
                         <div className="item-name" key={index} onClick={() => { this.toogle(element.id); }}>
-                            <i className={`iconfont icon-right ${iClass}`}></i>
+                            <i className={`iconfont ${element.active ? "icon-down" : "icon-right"} ${iClass}`}></i>
                             {this.props.showIcon ? <i className={`iconfont
                         ${iClass ? "icon-palace-tree-close" : element.active ? "icon-palace-tree-open" : "icon-palace-tree-close"}`}></i> : null}
                             {element.name}
@@ -246,7 +246,7 @@ export class Tree extends React.Component<Iprops, Istates> {
                     <div className="item-name" key={index} onClick={() => {
                         this.toogle(element.id, true);
                     }}>
-                        <i className={`iconfont icon-right ${iClass}`}></i>
+                        <i className={`iconfont ${element.active ? "icon-down" : "icon-right"} ${iClass}`}></i>
                         {this.props.showIcon ? <i className={`iconfont
                         ${iClass ? "icon-palace-tree-close" : element.active ? "icon-palace-tree-open" : "icon-palace-tree-close"}`}></i> : null}
                         {element.name}

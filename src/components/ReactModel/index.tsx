@@ -66,9 +66,6 @@ export default class ReactModel extends React.Component<IProps, IState> {
                         </div>
                         <div className="dialog-action">
                             <button type="button" className="btn btn-info" onClick={() => {
-                                this.setState({
-                                    isModelShow: false,
-                                });
                                 if (confirm) {
                                     confirm();
                                 }

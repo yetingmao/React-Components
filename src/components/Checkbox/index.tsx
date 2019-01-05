@@ -36,12 +36,14 @@ export default class Checkbox extends React.Component<IProps, IStates> {
         const { onSelect } = this.props;
         const { disabled, checked } = this.state;
         return (
-            <div className={`gjk-checkbox ${disabled ? "disabled" : (checked ? "checked" : "")}`} onClick={() => {
-                this.setState({
-                    checked: !checked,
-                });
-                if (onSelect) {
-                    this.props.onSelect(!checked);
+            <div className={`gjk-checkbox ${disabled ? (checked ? "disabled_checked" : "disabled") : (checked ? "checked" : "")}`} onClick={() => {
+                if (!disabled) {
+                    this.setState({
+                        checked: !checked,
+                    });
+                    if (onSelect) {
+                        onSelect(!checked);
+                    }
                 }
             }}>
                 <i className="iconfont icon-palace-check-mark"></i>
