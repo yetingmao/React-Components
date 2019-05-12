@@ -1,17 +1,14 @@
 #node_modules
-/node_modules
+#node_modules
 
 #vscode
 /.vscode/settings.json
 
 #tsc generated files
-/log/*
-/output
+#output
 
 #yarn
-/yarn-error.log
 
 #npm 
-/npm-debug.log
 /package-lock.json
 
